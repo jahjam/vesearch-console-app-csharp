@@ -8,7 +8,7 @@ public class ApiModel
     public ApiModel(ref HttpClient client)
     {
         _client = client;
-        _client.BaseAddress = new Uri("https://vesearch-api.onrender.com/api/v1/");
+        _client.BaseAddress = new Uri("https://vesearch-api-backend-production.up.railway.app/api/v1/");
         _client.DefaultRequestHeaders.Accept.Clear();
         _client.DefaultRequestHeaders.Accept.Add(
             new MediaTypeWithQualityHeaderValue("application/json"));
